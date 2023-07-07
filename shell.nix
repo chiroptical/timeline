@@ -6,8 +6,8 @@ pkgs.mkShell {
   buildInputs = with pkgs; [
     haskellPackages.cabal-install
     haskellPackages.ghcid
-    haskellPackages.hlint
     haskellPackages.hpack
+    haskellPackages.hlint
     haskellPackages.retrie
     haskellPackages.fourmolu
     haskellPackages.haskell-language-server
@@ -16,4 +16,3 @@ pkgs.mkShell {
   withHoogle = true;
   LANG = "en_US.utf8";
 }
-
